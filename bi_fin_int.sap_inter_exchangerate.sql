@@ -1,0 +1,20 @@
+create table if not exists bi_fin_int.sap_inter_exchangerate
+(
+absoluteexchangerate float,
+directquotedeffectiveexchra float,
+effectiveexchangerate float,
+exchangerate float,
+exchangerateeffectivedate timestamp,
+exchangeratetype varchar(65535),
+exchrateisindirectquotation boolean,
+indirectquotedeffctvexchrat float,
+invertedexchangerateisallow boolean,
+numberofsourcecurrencyunits integer,
+numberoftargetcurrencyunits integer,
+partition_date date,
+sourcecurrency varchar(65535),
+sourcecurrencydecimals varchar(65535),
+specialconversionisused boolean,
+targetcurrency varchar(65535),
+targetcurrencydecimals varchar(65535),
+system_created_date timestamp);
